@@ -1,0 +1,268 @@
+body{
+    margin: 0;
+}
+.menu{
+    margin: 0;
+    padding-bottom: 400;
+    text-align: center;
+    font-size: 35px;
+}
+ .menu-element {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color:darkgreen;
+}
+a {
+  display: block;
+  padding: 3px 15px;
+  text-decoration: none;
+}
+.header_menu {
+    height: 56px;
+    width: 100%;
+    background-image: url(wood.jpg);
+    background-size: cover;
+    margin: 0;
+    position: fixed;
+    padding: 5px;
+
+}
+
+.header_pic {
+    padding: 5px;
+    width: 100%;
+    height: 550px;
+    background-image: url(cup.jpg);
+    background-size:cover;
+}
+.header_pic_text {
+    display:block;
+    left:0;
+    bottom:40px;
+    width:100%;
+    font-family: "Monotype Corsiva" ,cursive;
+    font-size:40px;
+    color:#fff;
+    padding:25px;
+    text-align: center;
+}
+
+.header_logo {
+    background-image: url(logotip.jpg);
+    background-size: cover;
+    width:55px;
+    height: 55px;
+    float:left;
+    }
+.content{
+
+}
+.name_company_picture{
+    padding: 5px;
+    width: 100%;
+    height: 48px;
+   background-image: url(heart.jpg);
+
+}
+.name_company_text{
+    display:block;
+    left:0;
+    bottom:0;
+    width:100%;
+    font-family: "Monotype Corsiva" ,cursive;
+    font-size:45px;
+    font-weight:200;
+    color:navy;
+    padding:3px;
+    text-align: center;
+}
+
+.carousel-hider {
+    display: flex;
+    width: 1200px;
+    overflow: hidden;
+    margin-left: 60px;
+    margin-right: 60px;
+   background-image: url(picwood.jpg);
+}
+
+.carousel-list {
+    list-style: none;
+    padding: 15px;
+    display:flex;
+    background-image: url(picwood.jpg);
+       }
+
+.carousel-element {
+    margin-right: 25px;
+    display: flex;
+
+    }
+
+.carousel-element img {
+    width: 200px;
+    height: 200px;
+    }
+
+
+#carousel-arrow-left, #carousel-arrow-right {
+    display: inline-block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 50px;
+ /*  width: 25px;
+    height: 25px;*/
+    }
+
+#carousel-arrow-left:hover, #carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+#carousel-arrow-left {
+    float:left;
+}
+
+#carousel-arrow-right {
+    float: right;
+
+}
+.car{
+    background-image: url(picwood.jpg);
+
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.main_opinion{
+     background-image: url(wood.jpg);
+        text-align: center;
+    font-size: 30px;
+}
+.opinion{
+    background-color: yellow;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+ .A1 {
+    /*  margin: 0px 0 10px 10px; */
+     margin-bottom: 0px;
+     display:none;
+     font-size: 15px;
+     text-align: center;
+    /* background-color: green;*/
+     background-image: url(opinion_pic.jpg);
+    }
+.A1 img{
+    width: 25px;
+   height: 25px;
+
+}
+.av img{
+    width: 25px;
+    height: 25px;
+}
+.av{
+    /*background-color: green;*/
+    background-image: url(opinion_pic.jpg);
+    text-align: center;
+
+}
+.av4 img {
+     width: 25px;
+    height: 25px;
+}
+.av4{
+    background-image: url(opinion_pic.jpg);
+     opacity: 0.7;
+    text-align: center;
+}
+.works{
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 25px;
+}
+.work-container{
+    width:200px;
+    height:150px;
+    background-color: #ccc;
+    margin:0px auto;
+    padding:10px;
+    font-size:30px;
+    /*color: #fff;  */
+  background-image: url(house2.jpg);
+    background-size: cover;
+
+}
+.work-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.work-popup .work-popup-content{
+    margin:40px auto 0px auto;
+    width:100px;
+    height: 40px;
+    padding:10px;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+.interier{
+    width: 400px;
+    height: 200px;
+}
+.footer {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-image: url(wood.jpg);
+    background-size: cover;
+    margin: 0px;
+    padding: 5px;
+
+}
+.foot{
+    display: inline-block;
+    margin: 0;
+    /*padding-bottom: 400;*/
+    text-align: center;
+    font-size: 25px;
+    width: 1200px;
+}
+ .footer_content {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color:brown;
+}
+.copy{
+   display: flex;
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    width: 1200px;
+    padding-left: 700px;
+
+}
+.copy_element{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+.copyright{
+     display: flex;
+    height: 60px;
+    width: 100%;
+    background-image: url(picwood.jpg);
+    background-size: cover;
+    margin: 0px;
+    padding: 5px;
+}

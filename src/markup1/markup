@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<header>
+    <div class="header_menu">
+        <div class="header_logo"></div>
+        <ul class="menu">
+            <li class="menu-element"><a><i>О нас</i></a></li>
+            <i>
+                <li class="menu-element"><a> Отзывы</a></li>
+            </i>
+            <i>
+                <li class="menu-element"><a>Галерея</a></li>
+            </i>
+            <i>
+                <li class="menu-element"><a>Связаться с нами</a></li>
+            </i>
+        </ul>
+
+    </div>
+    <div class="header_pic">
+        <div class="header_pic_text">
+            <span><p>Дарим радость и уют каждому нашему посетителю с 2005 года</p>
+            <p>Вдохновляем быть настоящими <span>&#10084;</span></p>
+            </span>
+        </div>
+
+    </div>
+</header>
+<div class="content">
+    <div class="name_company_picture">
+        <span class="name_company_text">Кофейня "CoffeeLove"</span></div>
+</div>
+<div class="car">
+    <div>
+        <span id="carousel-arrow-left">Влево</span>
+        <span id="carousel-arrow-right">Вправо</span>
+        <!-- <img id="carousel-arrow-right" src="right.jpg">-->
+    </div>
+    <div class="carousel-hider">
+        <ul class="carousel-list">
+            <li class="carousel-element"><img src="look1.jpg">
+                <p>Капучино</p></li>
+            <li class="carousel-element"><img src="look2.jpg">
+                <p>Описание 2</p></li>
+            <li class="carousel-element"><img src="look3.jpg">
+                <p>Описание 3</p></li>
+            <li class="carousel-element"><img src="look4.jpg">
+                <p>Описание 4</p></li>
+            <li class="carousel-element"><img src="look5.jpg">
+                <p>Описание 5</p></li>
+            <li class="carousel-element"><img src="look6.jpg">
+                <p>Описание 6</p></li>
+            <li class="carousel-element"><img src="look7.jpg">
+                <p>Описание 7</p></li>
+            <li class="carousel-element"><img src="look8.jpg">
+                <p>Описание 8</p></li>
+        </ul>
+    </div>
+</div>
+<div class="main_opinion"> Отзывы</div>
+<div class="av"><img src="avatar.png">Классная кофейня!</div>
+<div class="av"><img src="avatar.png">Приду обязательно еще!Кофейня уютная,кофе вкусный!Интерьер вау,остались в
+    восторге!!!!!
+</div>
+<div class="av"><img src="avatar.png">Приду и друзьяшек приведу.Кофейня обалденная</div>
+<div class="av4"><img src="avatar.png">а я томат и солнцу рад</div>
+<div class="opinion" onclick="ch_disp('A1')">show more</div>
+<div class="A1"><img src="avatar.png">Соглашусь с предыдущими отзывами</div>
+<div class="A1"><img src="avatar.png">Нам очень понравилось</div>
+<div class="A1"><img src="avatar.png">Отлично провели день в данной кофейне</div>
+<div class="A1"><img src="avatar.png">Продолжайте в том же духе!</div>
+<div class="A1"><img src="avatar.png">Кофе отличный</div>
+<div class="works">Наши работы</div>
+<div class="work-container">
+    <a href="javascript:PopUpShow()">Посмотреть работы</a>
+</div>
+<div class="work-popup" id="popup1">
+    <div class="work-popup-content">
+        <ul>
+            <li><img class="interier" src="house1int.jpg"></li>
+            <li><img class="interier" src="house1int1.jpg"></li>
+        </ul>
+        <a href="javascript:PopUpHide()">Вернуться назад</a>
+    </div>
+</div>
+<div class="footer">
+    <ul class="foot">
+        <li class="footer_content"><a>Наши контакты: e-mail: coffee@mail.ru</a></li>
+        <li class="footer_content"><a>Наш телефон:89001001010</a></li>
+        <li class="footer_content"><a>Адрес:Ленинградская 55</a></li>
+    </ul>
+</div>
+<div class="copyright">
+    <div class="header_logo"></div>
+    <ul class="copy">
+        <li class="copy_element">(C)Copyright Все права защищены. 2018 год</li>
+    </ul>
+</div>
+</body>
+</html>

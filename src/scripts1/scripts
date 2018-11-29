@@ -1,0 +1,47 @@
+$(document).ready(function () {
+
+    var leftUIEl=$(document.getElementById("carousel-arrow-left"));
+                     var rightUiEl = $(document.getElementById("carousel-arrow-right"));
+
+var elementsList = $(".carousel-list");
+	var pixelsOffset = 225;
+	var currentLeftValue = 0;
+	var elementsCount = elementsList.find("li").length;
+var listWidth = (elementsCount+1)*25+(elementsCount)*200
+
+	var minimumOffset = - ( pixelsOffset);
+	var maximumOffset = 0;
+
+	leftUIEl.click(function() {
+		if (currentLeftValue != maximumOffset) {
+			currentLeftValue += pixelsOffset;
+			elementsList.animate({ marginLeft : currentLeftValue + "px"}, 500);
+		}
+	});
+
+    rightUiEl.click(function(){
+		if (Math.abs(currentLeftValue) <= listWidth) {
+			currentLeftValue -= pixelsOffset;
+			elementsList.animate({ marginLeft : currentLeftValue + "px"}, 500);
+		}
+	});
+});
+var ch_disp = function(A1)
+			{
+                var el=document.getElementsByClassName("A1");
+                for(var i = 0; i < el.length; i++) {
+				el[i].style.display = ( el[i].style.display == 'block' )? 'none' : 'block';}
+			}
+
+$(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
