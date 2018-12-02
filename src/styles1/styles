@@ -62,8 +62,7 @@ a {
     padding: 5px;
     width: 100%;
     height: 48px;
-   background-image: url(heart.jpg);
-
+    background-color: antiquewhite;
 }
 .name_company_text{
     display:block;
@@ -79,41 +78,39 @@ a {
 }
 
 .carousel-hider {
-    display: flex;
-    width: 1200px;
+    width: 910px;
     overflow: hidden;
-    margin-left: 60px;
-    margin-right: 60px;
-   background-image: url(picwood.jpg);
+    margin: 0 auto;
+   /* margin-left: 80px;
+    margin-right: 80px;
+   /*background-image: url(picwood.jpg);*/
+    background-color: burlywood;
 }
 
 .carousel-list {
     list-style: none;
     padding: 15px;
     display:flex;
-    background-image: url(picwood.jpg);
+     background-color: burlywood;
        }
 
 .carousel-element {
     margin-right: 25px;
-    display: flex;
-
-    }
+    /*display: flex;*/
+        }
 
 .carousel-element img {
     width: 200px;
     height: 200px;
-    }
+        }
 
 
 #carousel-arrow-left, #carousel-arrow-right {
-    display: inline-block;
+    display: inline-flex;
     border: 1px solid grey;
     background-color: lightgrey;
     padding: 5px;
     margin-top: 50px;
- /*  width: 25px;
-    height: 25px;*/
     }
 
 #carousel-arrow-left:hover, #carousel-arrow-right:hover {
@@ -122,40 +119,38 @@ a {
 }
 
 #carousel-arrow-left {
-    float:left;
+   /* float:left;*/
 }
 
 #carousel-arrow-right {
-    float: right;
+   /* float: right;*/
 
 }
 .car{
-    background-image: url(picwood.jpg);
-
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 20px;
+     background-color: burlywood;
+    width:100%;
+    display: flex;
 }
+
 .main_opinion{
      background-image: url(wood.jpg);
         text-align: center;
     font-size: 30px;
 }
 .opinion{
-    background-color: yellow;
+    background-color: rosybrown;
     cursor: pointer;
-    margin-bottom: 5px;
     font-weight: bold;
     text-align: center;
 }
  .A1 {
-    /*  margin: 0px 0 10px 10px; */
+
      margin-bottom: 0px;
      display:none;
      font-size: 15px;
      text-align: center;
-    /* background-color: green;*/
-     background-image: url(opinion_pic.jpg);
+
+     background-color: beige;
     }
 .A1 img{
     width: 25px;
@@ -167,8 +162,7 @@ a {
     height: 25px;
 }
 .av{
-    /*background-color: green;*/
-    background-image: url(opinion_pic.jpg);
+    background-color: beige;
     text-align: center;
 
 }
@@ -177,24 +171,74 @@ a {
     height: 25px;
 }
 .av4{
-    background-image: url(opinion_pic.jpg);
+    background-color: beige;
      opacity: 0.7;
     text-align: center;
 }
+
 .works{
-    background-color: aliceblue;
+    background-image: url(opinion_pic.jpg);
     text-align: center;
     font-size: 25px;
+
 }
-.work-container{
+.work-container1{
     width:200px;
     height:150px;
-    background-color: #ccc;
     margin:0px auto;
     padding:10px;
     font-size:30px;
-    /*color: #fff;  */
-  background-image: url(house2.jpg);
+     background-image: url(house2.jpg);
+    background-size: cover;
+     margin:15px;
+}
+.work-container2{
+    width:200px;
+    height:150px;
+    margin:0px auto;
+    padding:10px;
+    font-size:30px;
+     background-image:url(house3.jpg);
+    background-size: cover;
+     margin:15px;
+}
+.work-container3{
+    width:200px;
+    height:150px;
+    margin:0px auto;
+    padding:10px;
+    font-size:30px;
+     background-image:url(house4.jpg);
+    background-size: cover;
+     margin:15px;
+}
+.work-container4{
+    width:200px;
+    height:150px;
+    margin:0px auto;
+    padding:10px;
+    font-size:30px;
+     background-image:url(house1.jpg);
+    background-size: cover;
+     margin:15px;
+}
+.work-container5{
+    width:200px;
+    height:150px;
+    margin:0px auto;
+    padding:10px;
+    font-size:30px;
+     background-image:url(house5.jpg);
+    background-size: cover;
+     margin:15px;
+}
+.work-container6{
+    width:200px;
+    height:150px;
+    margin:15px;
+    padding:10px;
+    font-size:30px;
+     background-image:url(house6.JPG);
     background-size: cover;
 
 }
@@ -217,6 +261,11 @@ a {
 .interier{
     width: 400px;
     height: 200px;
+}
+.popup-href{
+    color: aliceblue;
+    font-size: 15px;
+    text-align: center;
 }
 .footer {
     display: flex;
@@ -243,22 +292,20 @@ a {
     color:brown;
 }
 .copy{
-   display: flex;
+    display: inline-flex;
     margin: 0;
-    text-align: center;
+    text-align: right;
     font-size: 25px;
     width: 1200px;
-    padding-left: 700px;
-
-}
+    }
 .copy_element{
-    display: inline-block;
+    display: inline-flex;
     margin: 0;
     padding: 0;
     color:white;
+    padding-left: 700px;
 }
 .copyright{
-     display: flex;
     height: 60px;
     width: 100%;
     background-image: url(picwood.jpg);
@@ -266,3 +313,7 @@ a {
     margin: 0px;
     padding: 5px;
 }
+.container_popup{
+    display: inline-flex;
+    width: 1200px;
+     }
