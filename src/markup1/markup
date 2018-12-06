@@ -1,178 +1,104 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head >
     <link rel="stylesheet" type="text/css" href="index.css">
 
     <script src="jquery-3.3.1.min.js"></script>
     <script src="index.js"></script>
 </head>
 <body>
-<header>
-    <div class="header_menu">
-        <div class="header_logo"></div>
-        <ul class="menu">
-            <li class="menu-element"><a href="#about"><i>О нас</i></a></li>
-            <i>
-                <li class="menu-element"><a href="#opinion_about"> Отзывы</a></li>
-            </i>
-            <i>
-                <li class="menu-element"><a href="#gallery">Галерея</a></li>
-            </i>
-            <i>
-                <li class="menu-element"><a href="#contacts">Связаться с нами</a></li>
-            </i>
-        </ul>
+<div class="body-container">
+    <header>
+        <div class="header_menu">
+            <div  class="header_logo" > </div>
+            <ul class="menu">
+                <li class="menu-element"><a href="#about"><i>О нас</i></a></li>
+                <i> <li class="menu-element"><a href="#opinion_about"> Отзывы</a></li></i>
+                <i><li class="menu-element"><a href="#gallery">Галерея</a></li></i>
+                <i> <li class="menu-element"><a href="#contacts">Связаться с нами</a></li></i>
+            </ul>
 
-    </div>
-    <div class="header_pic">
-        <div class="header_pic_text">
+        </div>
+        <div class="header_pic" ><div class="header_pic_text">
             <span><p>Дарим радость и уют каждому нашему посетителю с 2005 года</p>
             <p>Вдохновляем быть настоящими <span>&#10084;</span></p>
             </span>
         </div>
 
-    </div>
-</header>
-<div class="content">
-    <div class="name_company_picture">
-        <span class="name_company_text" name="about">Кофейня "CoffeeLove"</span></div>
-</div>
-<div class="car">
-    <div><span id="carousel-arrow-left">Влево</span></div>
-    <div class="carousel-hider">
-        <ul class="carousel-list">
-            <li class="carousel-element"><img src="look1.jpg">
-                <p>Вкуснейший капучинно с нежной пенкой и шоколадной крошкой </p></li>
-            <li class="carousel-element"><img src="look2.jpg">
-                <p>Фильтр-кофе от нашего шефа</p></li>
-            <li class="carousel-element"><img src="look3.jpg">
-                <p>Нежный латте для самых искушенных</p></li>
-            <li class="carousel-element"><img src="look4.jpg">
-                <p>Художественный капучинно для творческих</p></li>
-            <li class="carousel-element"><img src="look5.jpg">
-                <p>Кофе с молоком,для тех кто любит классику</p></li>
-            <li class="carousel-element"><img src="look6.jpg">
-                <p>Латте с пенкой из сливочного мороженого с шоколадом</p></li>
-            <li class="carousel-element"><img src="look7.jpg">
-                <p>Вкусный карамельный раф с башенкой из сливок</p></li>
-            <li class="carousel-element"><img src="look8.jpg">
-                <p>Необычный кофе из качественных зёрен</p></li>
-        </ul>
-    </div>
-    <div><span id="carousel-arrow-right">Вправо</span></div>
-</div>
-<div class="main_opinion" name="opinion_about"> Отзывы</div>
-<div class="av"><img src="avatar.png">Классная кофейня!</div>
-<div class="av"><img src="avatar.png">Приду обязательно еще!Кофейня уютная,кофе вкусный!Интерьер вау,остались в
-    восторге!!!!!
-</div>
-<div class="av"><img src="avatar.png">Приду и друзьяшек приведу.Кофейня обалденная</div>
-<div class="av4"><img src="avatar.png">а я томат и солнцу рад</div>
-<div class="opinion" onclick="ch_disp('A1')">show more</div>
-<div class="A1"><img src="avatar.png">Соглашусь с предыдущими отзывами</div>
-<div class="A1"><img src="avatar.png">Нам очень понравилось</div>
-<div class="A1"><img src="avatar.png">Отлично провели день в данной кофейне</div>
-<div class="A1"><img src="avatar.png">Продолжайте в том же духе!</div>
-<div class="A1"><img src="avatar.png">Кофе отличный</div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="name_company_picture">
+            <span class="name_company_text"> <a name="about">Кофейня "CoffeeLove"</a></span></div>
 
+        <div class="car">
+            <div><span id="carousel-arrow-left">Влево</span> </div>
+            <div class="carousel-hider">
+                <ul class="carousel-list">
+                    <li class="carousel-element"><img src="look1.jpg"> <p>Вкуснейший капучинно с нежной пенкой и шоколадной крошкой </p></li>
+                    <li class="carousel-element"><img src="look2.jpg"><p>Фильтр-кофе от нашего шефа</p></li>
+                    <li class="carousel-element"><img src="look3.jpg"><p>Нежный латте для самых искушенных</p></li>
+                    <li class="carousel-element"><img src="look4.jpg"><p>Художественный капучинно для творческих</p></li>
+                    <li class="carousel-element"><img src="look5.jpg"><p>Кофе с молоком,для тех кто любит классику</p></li>
+                    <li class="carousel-element"><img src="look6.jpg"><p>Латте с пенкой из сливочного мороженого с шоколадом</p></li>
+                    <li class="carousel-element"><img src="look7.jpg"><p>Вкусный карамельный раф с башенкой из сливок</p></li>
+                    <li class="carousel-element"><img src="look8.jpg"><p>Необычный кофе из качественных зёрен</p></li>
+                    <li class="carousel-element"><img src="look9.jpg"><p>Чёрный кофе</p></li>
 
-<div class="works" name="gallery">Наши работы</div>
-<div class="container_popup">
+                </ul>
+            </div>
+            <div><span id="carousel-arrow-right">Вправо</span></div>
+        </div>
 
-    <div class="work-container1">
-        <a href="javascript:PopUpShow1()" class="popup-href">Посмотреть работы</a>
-    </div>
-
-    <div class="work-popup" id="popup1">
-        <div class="work-popup-content">
-            <ul>
-                <li><img class="interier" src="house1int.jpg"></li>
-                <li><img class="interier" src="house1int1.jpg"></li>
+        <div class="main_opinion"><a name="opinion_about"> Отзывы</a></div>
+        <div class="opinion-block">
+            <ul class="opinion-list vaisible-opinion-list">
+                <li class="opinion-item"><img src="avatar.png"> Приду обязательно еще!Кофейня уютная,кофе вкусный!Интерьер вау,остались в восторге!</li>
+                <li class="opinion-item"><img src="avatar.png"> Классная кофейня!</li>
+                <li class="opinion-item"><img src="avatar.png"> Кофейня супер</li>
+                <li class="opinion-item"><img src="avatar.png"> Приду  еще раз</li>
+                <li class="opinion-item"> <img src="avatar.png">Отлично провели день в данной кофейне</li>
+                <li class="opinion-item"><img src="avatar.png"> Мы остались довольны</li>
+                <li class="opinion-item"><img src="avatar.png"> Кофе вкусный</li>
+                <li class="opinion-item"> <img src="avatar.png">Соглашусь с предыдущими отзывами</li>
             </ul>
-            <a href="javascript:PopUpHide1()" class="popup-href">Вернуться назад</a>
+        </div>
+        <a class="show-hide-btn">
+            <span>Show more</span>
+
+        </a> <div class="works"><a name="gallery"> Наши работы</a></div>
+
+        <div class="popup-wrapper">
+            <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
+            <div class="popup">
+                <div class="popup-content">
+                    <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
+
+                </div>
+            </div>
+        </div>
+
+        <label  for="popupCheckboxOne" class="popup-shower"><img src="house1.jpg"></label>
+        <label  for="popupCheckboxOne" class="popup-shower"><img src="house2.jpg"></label>
+        <label  for="popupCheckboxOne" class="popup-shower"><img src="house3.jpg"></label>
+        <label  for="popupCheckboxOne" class="popup-shower"><img src="house4.jpg"></label>
+        <label  for="popupCheckboxOne" class="popup-shower"><img src="house5.jpg"></label>
+        <label  for="popupCheckboxOne" class="popup-shower"><img src="house6.JPG"></label>
+        <label  for="popupCheckboxOne" class="popup-shower"><img src="house7.jpg"></label>
+        <label  for="popupCheckboxOne" class="popup-shower"><img src="house8.jpg"></label>
+
+        <div class="footer"> <a name="contacts"></a>
+            <ul class="foot">
+                <li class="footer_content"><a>Наши контакты:  e-mail: coffee@mail.ru</a></li>
+                <li class="footer_content"><a>Наш телефон:89001001010</a></li>
+                <li class="footer_content"><a>Адрес:Ленинградская 55</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <div class="header_logo"></div>
+            (C)Copyright Все права защищены. 2018 год
         </div>
     </div>
-
-    <div class="work-container2">
-        <a href="javascript:PopUpShow2()" class="popup-href">Посмотреть работы</a>
-    </div>
-    <div class="work-popup" id="popup2">
-        <div class="work-popup-content">
-            <ul>
-                <li><img class="interier" src="h2.jpg"></li>
-                <li><img class="interier" src="h3.jpg"></li>
-            </ul>
-            <a href="javascript:PopUpHide2()" class="popup-href">Вернуться назад</a>
-        </div>
-    </div>
-
-    <div class="work-container3">
-        <a href="javascript:PopUpShow3()" class="popup-href">Посмотреть работы</a>
-    </div>
-    <div class="work-popup" id="popup3">
-        <div class="work-popup-content">
-            <ul>
-                <li><img class="interier" src="h5.jpg"></li>
-                <li><img class="interier" src="h6.jpg"></li>
-            </ul>
-            <a href="javascript:PopUpHide3()" class="popup-href">Вернуться назад</a>
-        </div>
-    </div>
-
-
-    <div class="work-container4">
-        <a href="javascript:PopUpShow4()" class="popup-href">Посмотреть работы</a>
-    </div>
-    <div class="work-popup" id="popup4">
-        <div class="work-popup-content">
-            <ul>
-                <li><img class="interier" src="h7.jpg"></li>
-                <li><img class="interier" src="h8.jpg"></li>
-            </ul>
-            <a href="javascript:PopUpHide4()" class="popup-href">Вернуться назад</a>
-        </div>
-    </div>
-    <div class="work-container5">
-        <a href="javascript:PopUpShow5()" class="popup-href">Посмотреть работы</a>
-    </div>
-    <div class="work-popup" id="popup5">
-        <div class="work-popup-content">
-            <ul>
-                <li><img class="interier" src="h9.jpg"></li>
-                <li><img class="interier" src="h10.jpg"></li>
-            </ul>
-            <a href="javascript:PopUpHide5()" class="popup-href">Вернуться назад</a>
-        </div>
-    </div>
-
-
-    <div class="work-container6">
-        <a href="javascript:PopUpShow6()" class="popup-href">Посмотреть работы</a>
-    </div>
-    <div class="work-popup" id="popup6">
-        <div class="work-popup-content">
-            <ul>
-                <li><img class="interier" src="h11.jpg"></li>
-                <li><img class="interier" src="h12.jpg"></li>
-            </ul>
-            <a href="javascript:PopUpHide6()" class="popup-href">Вернуться назад</a>
-        </div>
-    </div>
-
-</div>
-
-<div class="footer" name="contacts">
-    <ul class="foot">
-        <li class="footer_content"><a>Наши контакты: e-mail: coffee@mail.ru</a></li>
-        <li class="footer_content"><a>Наш телефон:89001001010</a></li>
-        <li class="footer_content"><a>Адрес:Ленинградская 55</a></li>
-    </ul>
-</div>
-<div class="copyright">
-    <div class="header_logo"></div>
-    <ul class="copy">
-        <li class="copy_element">(C)Copyright Все права защищены. 2018 год</li>
-    </ul>
 </div>
 </body>
 </html>

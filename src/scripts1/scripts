@@ -1,115 +1,47 @@
 $(document).ready(function () {
-
-    var leftUIEl=$(document.getElementById("carousel-arrow-left"));
+      var leftUIEl=$(document.getElementById("carousel-arrow-left"));
                      var rightUiEl = $(document.getElementById("carousel-arrow-right"));
 
 var elementsList = $(".carousel-list");
-	var pixelsOffset = 225;
-	var currentLeftValue = 0;
-	var elementsCount = elementsList.find("li").length;
-var listWidth = (elementsCount+1)*25+(elementsCount)*200
-
-	var minimumOffset = - ( pixelsOffset);
-	var maximumOffset = 0;
+	var elemWidth = 200,
+        elemOffset = 25,
+        elemTotalWidth = 225,
+        currentLeftValue = 0,
+        elementsCount = elementsList.find("li").length,
+        listWidth=(elementsCount-4) * elemWidth,
+        maximumOffset = 0;
 
 	leftUIEl.click(function() {
 		if (currentLeftValue != maximumOffset) {
-			currentLeftValue += pixelsOffset;
+			currentLeftValue += elemTotalWidth;
 			elementsList.animate({ marginLeft : currentLeftValue + "px"}, 500);
 		}
 	});
 
     rightUiEl.click(function(){
 		if (Math.abs(currentLeftValue) <= listWidth) {
-			currentLeftValue -= pixelsOffset;
+			currentLeftValue -= elemTotalWidth;
 			elementsList.animate({ marginLeft : currentLeftValue + "px"}, 500);
 		}
 	});
 });
-var ch_disp = function(A1)
-			{
-                var el=document.getElementsByClassName("A1");
-                               for(var i = 0; i < el.length; i++) {
-				el[i].style.display = ( el[i].style.display == 'block' )? 'none' : 'block';
-                               }
-            			}
+$(function(){
+  $('.show-hide-btn').click(function(){
+    $('.opinion-item:nth-child(n+5)').slideToggle('');
+  });
 
+});
 
-$(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы
-        PopUpHide();
-    });
-    //Функция отображения PopUp
-    function PopUpShow1(){
-        $("#popup1").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHide1(){
-        $("#popup1").hide();
-    }
+/*$(".show-hide-btn").click(toggleButtonName);
 
-$(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы
-        PopUpHide();
-    });
- //Функция отображения PopUp
-    function PopUpShow2(){
-        $("#popup2").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHide2(){
-        $("#popup2").hide();
-    }
+ function toggleButtonName (elem){
+    var elemText = $(elem.target)[0].innerText;
+    const showMoreText = 'show more';
+    const showLessText = 'show less';
 
-
-$(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы
-        PopUpHide();
-    });
- //Функция отображения PopUp
-    function PopUpShow3(){
-        $("#popup3").show();
+    if (elemText == showLessText) {
+        $(elem.target)[0].innerText = showMoreText;
+    }else{
+        $(elem.target)[0].innerText = showLessText;
     }
-    //Функция скрытия PopUp
-    function PopUpHide3(){
-        $("#popup3").hide();
-    }
-
-$(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы
-        PopUpHide();
-    });
- //Функция отображения PopUp
-    function PopUpShow4(){
-        $("#popup4").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHide4(){
-        $("#popup4").hide();
-    }
-$(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы
-        PopUpHide();
-    });
- //Функция отображения PopUp
-    function PopUpShow5(){
-        $("#popup5").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHide5(){
-        $("#popup5").hide();
-    }
-$(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы
-        PopUpHide();
-    });
- //Функция отображения PopUp
-    function PopUpShow6(){
-        $("#popup6").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHide6(){
-        $("#popup6").hide();
-    }
-/* var t = document.getElementsByClassName("opinion");
- var ch_disp.onclick = function () {t.innerHTML="show less"}*/
+*/
