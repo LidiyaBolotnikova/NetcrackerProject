@@ -101,6 +101,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 200px;
+
 }
 
 .carousel-element img {
@@ -113,9 +114,7 @@ a {
     display: inline-flex;
     border: 1px solid grey;
     background-color: lightgrey;
-   /* padding: 5px;
-    /*margin-top: 50px;*/
-    margin:0;
+   padding: 5px;
     }
 
 #carousel-arrow-left:hover, #carousel-arrow-right:hover {
@@ -125,7 +124,7 @@ a {
 
 }
 .car{
-     background-color:#FFDAB9;
+    background-color:#FFDAB9;
     width:100%;
     display: flex;
 }
@@ -145,7 +144,7 @@ a {
     list-style: none;
 }
 .opinion-list .opinion-item {
-    position: relative;
+
     margin-bottom: 15px;
     line-height: 15px;
 }
@@ -247,9 +246,14 @@ a {
 }
 .popup-shower img{
     display: inline-block;
-        height: 25width: 250px;
-    }
+        height: 250px;
+        width: 250px;
 
+    }
+.popup-wrapper {
+position:center;
+justify-content:center;
+}
 .popup-closer {
   position: absolute;
   top: 5px;
