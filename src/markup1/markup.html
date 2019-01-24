@@ -10,29 +10,28 @@
 <div class="body-container">
     <header>
         <div class="header_menu">
-            <div  class="header_logo" > </div>
+            <div  class="header_logo" ></div>
             <ul class="menu">
                 <li class="menu-element"><a href="#about"><i>О нас</i></a></li>
                 <i> <li class="menu-element"><a href="#opinion_about"> Отзывы</a></li></i>
                 <i><li class="menu-element"><a href="#gallery">Галерея</a></li></i>
                 <i> <li class="menu-element"><a href="#contacts">Связаться с нами</a></li></i>
             </ul>
-
         </div>
         <div class="header_pic" ><div class="header_pic_text">
-            <span><p>Дарим радость и уют каждому нашему посетителю с 2005 года</p>
-            <p>Вдохновляем быть настоящими <span>&#10084;</span></p>
+            <span><p class="p_header">Дарим радость и уют каждому нашему посетителю с 2005 года</p>
+           <p>Вдохновляем быть настоящими <span>&#10084;</span></p>
             </span>
         </div>
-
         </div>
+
     </header>
     <div class="content">
         <div class="name_company_picture">
             <span class="name_company_text"> <a name="about">Кофейня "CoffeeLove"</a></span></div>
 
         <div class="car">
-            <div><span id="carousel-arrow-left">Влево</span> </div>
+            <span id="carousel-arrow-left"><img src="../images/arrow-left.png"></span>
             <div class="carousel-hider">
                 <ul class="carousel-list">
                     <li class="carousel-element"><img src="../images/look1.jpg"> <p>Вкуснейший капучинно с нежной пенкой и шоколадной крошкой </p></li>
@@ -43,13 +42,11 @@
                     <li class="carousel-element"><img src="../images/look6.jpg"><p>Латте с пенкой из сливочного мороженого с шоколадом</p></li>
                     <li class="carousel-element"><img src="../images/look7.jpg"><p>Вкусный карамельный раф с башенкой из сливок</p></li>
                     <li class="carousel-element"><img src="../images/look8.jpg"><p>Необычный кофе из качественных зёрен</p></li>
-                    <li class="carousel-element"><img src="../images/look9.jpg"><p>Чёрный кофе</p></li>
 
                 </ul>
             </div>
-            <div><span id="carousel-arrow-right">Вправо</span></div>
+            <span id="carousel-arrow-right"><img src="../images/arrow-right.png"></span>
         </div>
-
         <div class="main_opinion"><a name="opinion_about"> Отзывы</a></div>
         <div class="opinion-block">
             <ul class="opinion-list vaisible-opinion-list">
@@ -68,26 +65,177 @@
 
         </a> <div class="works"><a name="gallery"> Наши работы</a></div>
 
-        <div class="popup-wrapper">
-            <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
-            <div class="popup">
-                <div class="popup-content">
-                    <label for="popupCheckboxOne" class="popup-closer">&#215;
-                    </label>
+        <div class="content__gallery">
+            <a name="gallery"></a>
+            <div class="gallery-line">
+                <div class="gallery-line-image o1" onclick="parent_popup_click1.style.display='block';" ></div>
+                <div class="gallery-line-image o2" onclick="parent_popup_click2.style.display='block';"></div>
+                <div class="gallery-line-image o3" onclick="parent_popup_click3.style.display='block';"></div>
+                <div class="gallery-line-image o4" onclick="parent_popup_click4.style.display='block';"></div>
+            </div>
+            <div class="gallery-line">
+                <div class="gallery-line-image o5" onclick="parent_popup_click5.style.display='block';"></div>
+                <div class="gallery-line-image o6" onclick="parent_popup_click6.style.display='block';"></div>
+                <div class="gallery-line-image o7" onclick="parent_popup_click7.style.display='block';"></div>
+                <div class="gallery-line-image o8" onclick="parent_popup_click8.style.display='block';"></div>
+            </div>
+        </div>
 
+        <!-- ОКНО1 -->
+        <div id="parent_popup_click1" class="modal">
+            <div class="modal-content popup_1">
+                <a class="closess" title="Закрыть" onclick="document.getElementById('parent_popup_click1').style.display='none';">&#215;</a>
+               <p>Наша работа 1</p>
+                <div class="popup-carousel">
+                    <span id="popup-carousel-arrow-left"><img src="../images/arrow-left.png"></span>
+                    <div class="popup-carousel-hider">
+                        <ul class="popup-carousel-list1">
+                            <li class="popup-carousel-element" ><img src="../images/cat.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/cat2.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/cat3.jpg"></li>
+                                                                             </ul>
+                    </div>
+                    <span id="popup-carousel-arrow-right"><img src="../images/arrow-right.png"></span>
                 </div>
             </div>
         </div>
 
-        <label  for="popupCheckboxOne" class="popup-shower" ><img src="../images/house1.jpg"></label>
-        <label  for="popupCheckboxOne" class="popup-shower" ><img src="../images/house2.jpg"></label>
-        <label  for="popupCheckboxOne" class="popup-shower"><img src="../images/house3.jpg"></label>
-        <label  for="popupCheckboxOne" class="popup-shower"><img src="../images/house4.jpg"></label>
-        <label  for="popupCheckboxOne" class="popup-shower"><img src="../images/house5.jpg"></label>
-        <label  for="popupCheckboxOne" class="popup-shower"><img src="../images/house6.JPG"></label>
-        <label  for="popupCheckboxOne" class="popup-shower"><img src="../images/house7.jpg"></label>
-        <label  for="popupCheckboxOne" class="popup-shower"><img src="../images/house8.jpg"></label>
+        <!-- ОКНО2 -->
+        <div id="parent_popup_click2" class="modal">
+            <div class="modal-content popup_2">
+                <a class="closess" title="Закрыть" onclick="document.getElementById('parent_popup_click2').style.display='none';">&#215;</a>
+               <p>Наша работа 2</p>
+                <div class="popup-carousel">
+                    <span id="popup-carousel-arrow-left1"><img src="../images/arrow-left.png"></span>
+                    <div class="popup-carousel-hider">
+                        <ul class="popup-carousel-list2">
+                            <li class="popup-carousel-element" ><img src="../images/apple1.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/apple2.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/apple3.jpg"></li>
+                                                  </ul>
+                    </div>
+                    <span id="popup-carousel-arrow-right1"><img src="../images/arrow-right.png"></span>
+            </div>
+        </div>
+        </div>
 
+        <!-- ОКНО3 -->
+        <div id="parent_popup_click3" class="modal" >
+            <div class="modal-content popup_3">
+                <a class="closess" title="Закрыть" onclick="document.getElementById('parent_popup_click3').style.display='none';">&#215;</a>
+                <p>Наша работа 3</p>
+                <div class="popup-carousel">
+                    <span id="popup-carousel-arrow-left2"><img src="../images/arrow-left.png"></span>
+                    <div class="popup-carousel-hider">
+                        <ul class="popup-carousel-list3">
+                            <li class="popup-carousel-element" ><img src="../images/h2.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/h3.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/h5.jpg"></li>
+                        </ul>
+                    </div>
+                    <span id="popup-carousel-arrow-right2"><img src="../images/arrow-right.png"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ОКНО4 -->
+        <div id="parent_popup_click4" class="modal">
+            <div class="modal-content popup4">
+                <a class="closess" title="Закрыть" onclick="document.getElementById('parent_popup_click4').style.display='none';">&#215;</a>
+                <p>Наша работа 4</p>
+                <div class="popup-carousel">
+                    <span id="popup-carousel-arrow-left3"><img src="../images/arrow-left.png"></span>
+                    <div class="popup-carousel-hider">
+                        <ul class="popup-carousel-list4">
+                            <li class="popup-carousel-element" ><img src="../images/h6.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/h7.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/h8.jpg"></li>
+                        </ul>
+                    </div>
+                    <span id="popup-carousel-arrow-right3"><img src="../images/arrow-right.png"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ОКНО5 -->
+        <div id="parent_popup_click5" class="modal">
+            <div class="modal-content popup_5">
+                <a class="closess" title="Закрыть" onclick="document.getElementById('parent_popup_click5').style.display='none';">&#215;</a>
+                <p>Наша работа 5</p>
+                <div class="popup-carousel">
+                    <span id="popup-carousel-arrow-left4"><img src="../images/arrow-left.png"></span>
+                    <div class="popup-carousel-hider">
+                        <ul class="popup-carousel-list5">
+                            <li class="popup-carousel-element" ><img src="../images/h9.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/h10.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/h11.jpg"></li>
+                        </ul>
+                    </div>
+                    <span id="popup-carousel-arrow-right4"><img src="../images/arrow-right.png"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ОКНО6 -->
+        <div id="parent_popup_click6" class="modal" >
+            <div class="modal-content popup_6">
+                <a class="closess" title="Закрыть" onclick="document.getElementById('parent_popup_click6').style.display='none';">&#215;</a>
+                <p>Наша работа 6</p>
+                <div class="popup-carousel">
+                    <span id="popup-carousel-arrow-left5"><img src="../images/arrow-left.png"></span>
+                    <div class="popup-carousel-hider">
+                        <ul class="popup-carousel-list6">
+                            <li class="popup-carousel-element" ><img src="../images/h12.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/house1int.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/house1int1.jpg"></li>
+                        </ul>
+                    </div>
+                    <span id="popup-carousel-arrow-right5"><img src="../images/arrow-right.png"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ОКНО7 -->
+        <div id="parent_popup_click7" class="modal">
+            <div class="modal-content popup_7">
+                <a class="closess" title="Закрыть" onclick="document.getElementById('parent_popup_click7').style.display='none';">&#215;</a>
+                <p>Наша работа 7</p>
+                <div class="popup-carousel">
+                    <span id="popup-carousel-arrow-left6"><img src="../images/arrow-left.png"></span>
+                    <div class="popup-carousel-hider">
+                        <ul class="popup-carousel-list7">
+                            <li class="popup-carousel-element" ><img src="../images/dog1.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/dog2.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/dog3.jpg"></li>
+                        </ul>
+                    </div>
+                    <span id="popup-carousel-arrow-right6"><img src="../images/arrow-right.png"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ОКНО8 -->
+        <div id="parent_popup_click8" class="modal">
+            <div class="modal-content popup_8">
+                <a class="closess" title="Закрыть" onclick="document.getElementById('parent_popup_click8').style.display='none';">&#215;</a>
+                <p>Наша работа 8</p>
+                <div class="popup-carousel">
+                    <span id="popup-carousel-arrow-left7"><img src="../images/arrow-left.png"></span>
+                    <div class="popup-carousel-hider">
+                        <ul class="popup-carousel-list8">
+                            <li class="popup-carousel-element" ><img src="../images/bird1.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/bird2.jpg"></li>
+                            <li class="popup-carousel-element"><img src="../images/bird3.jpg"></li>
+                        </ul>
+                    </div>
+                    <span id="popup-carousel-arrow-right7"><img src="../images/arrow-right.png"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                </div>
+          <div class="footer-main">
         <div class="footer"> <a name="contacts"></a>
             <ul class="foot">
                 <li class="footer_content"><a>Наши контакты:  e-mail: coffee@mail.ru</a></li>
@@ -99,7 +247,7 @@
             <div class="header_logo"></div>
             (C)Copyright Все права защищены. 2018 год
         </div>
-    </div>
+          </div>
 </div>
 </body>
 </html>

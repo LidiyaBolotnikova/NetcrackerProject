@@ -1,22 +1,8 @@
 body{
     margin: 0;
 }
-.menu{
-    margin: 0;
-    padding-bottom: 400;
-    text-align: center;
-    font-size: 35px;
-}
- .menu-element {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    color:#4682B4;
-}
-a {
-  display: block;
-  padding: 3px 15px;
-  text-decoration: none;
+.body-container{
+margin:0;
 }
 .header_menu {
     height: 56px;
@@ -24,17 +10,42 @@ a {
     background-image: url(../images/wood.jpg);
     background-size: cover;
     margin: 0;
+    padding:0;
     position: fixed;
-    padding: 5px;
+    display:flex;
+}
+.menu{
+display:inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+     text-align: center;
+}
+ .menu-element {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color:#4682B4;
+    text-align: center;
 
 }
+a{
+  display: block;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+a:hover{
+text-decoration: underline; }
 
 .header_pic {
-    padding: 5px;
     width: 100%;
     height: 550px;
     background-image: url(../images/cup.jpg);
     background-size:cover;
+    display:flex;
+}
+.p_header{
+margin:65px;
 }
 .header_pic_text {
     display:block;
@@ -44,7 +55,6 @@ a {
     font-family: "Monotype Corsiva" ,cursive;
     font-size:40px;
     color:#fff;
-    padding:25px;
     text-align: center;
 }
 
@@ -53,7 +63,6 @@ a {
     background-size: cover;
     width:55px;
     height: 55px;
-    float:left;
     }
 .content{
     max-width: 1200px;
@@ -68,67 +77,51 @@ a {
 }
 .name_company_text{
     display:block;
-    left:0;
-    bottom:0;
-    width:100%;
     font-family: "Monotype Corsiva" ,cursive;
     font-size:45px;
-    font-weight:200;
     color:navy;
-    padding:3px;
+    padding:0;
     text-align: center;
 }
-
+.car {
+width:100%;
+display:flex;
+justify-content:center;
+background-color: #FFDAB9;
+}
 .carousel-hider {
     width: 910px;
     overflow: hidden;
-    margin: 0 auto;
-   /* margin-left: 80px;
-    margin-right: 80px;
-   /*background-image: url(picwood.jpg);*/
-    background-color: #FFDAB9;
+   /* background-color: #FFDAB9;*/
 }
-
 .carousel-list {
+ padding-left:100px;
     list-style: none;
     padding: 15px;
     display:flex;
-     background-color: #FFDAB9;
-}
-
+ }
 .carousel-element {
     margin-right: 25px;
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 200px;
-
 }
-
 .carousel-element img {
     width: 200px;
     height: 200px;
 }
-
-
-#carousel-arrow-left, #carousel-arrow-right {
+#carousel-arrow-left img, #carousel-arrow-right img{
     display: inline-flex;
-    border: 1px solid grey;
-    background-color: lightgrey;
-   padding: 5px;
+    height:25px;
+    padding: 5px;
+     width: 55px;
+     margin-top: 95px;
     }
 
 #carousel-arrow-left:hover, #carousel-arrow-right:hover {
     cursor: pointer;
-    background-color: grey;
-}
 
 }
-.car{
-    background-color:#FFDAB9;
-    width:100%;
-    display: flex;
-}
-
 .main_opinion{
      background-image: url(../images/wood.jpg);
     text-align: center;
@@ -144,7 +137,6 @@ a {
     list-style: none;
 }
 .opinion-list .opinion-item {
-
     margin-bottom: 15px;
     line-height: 15px;
 }
@@ -188,107 +180,15 @@ a {
 .opinion-item:nth-child(n+5) {
     display: none;
 }
-
-.popup-checkbox, .popup {
-  display: none;
-}
-
-.popup {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-.popup:before {
-  display: block;
-  content: ' ';
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  opacity: .5;
-}
-
-.popup-content {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 20px;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/*.popup-shower {
-  color: #00f;
-  cursor: pointer;
-  text-decoration: underline;
-}*/
-
-.popup-shower:hover {
- display: inline-block;
- align-content: center;
-}
-.popup-shower img{
-    display: inline-block;
-        height: 250px;
-        width: 250px;
-
-    }
-.popup-wrapper {
-position:center;
-justify-content:center;
-}
-.popup-closer {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  color: #999;
-  font-size: 20px;
-  border: 1px solid #999;
-  display: block;
-  width: 40px;
-  height: 40px;
-  line-height: 20px;
-  text-align: center;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.popup-closer:hover {
-  background-color: #eee;
-}
-.popup-closer img {
-    width: 150px;
-    height: 150px;
-}
-.popup-checkbox:checked + .popup {
-  opacity: 1;
-  display: block;
-}
-
 .works{
     background-image: url(../images/opinion_pic.jpg);
     text-align: center;
     font-size: 25px;
 
 }
-
+.footer-main{
+width:100%;
+}
 .footer {
     display: flex;
     height: 40px;
@@ -302,10 +202,9 @@ justify-content:center;
 .foot{
     display: inline-block;
     margin: 0;
-
     text-align: center;
     font-size: 25px;
-    width: 1200px;
+    width: 100%;
 }
  .footer_content {
     display: inline-block;
@@ -318,11 +217,10 @@ justify-content:center;
     margin: 0;
     text-align: right;
     font-size: 15px;
-    width: 1200px;
+    width: 100%;
     }
 .copy_element{
     color:white;
-
 }
 .copyright{
     height: 60px;
@@ -333,5 +231,304 @@ justify-content:center;
     padding: 5px;
     text-align: right;
     color: #7FFFD4;
-    font-size: 23px;
+    font-size: 21px;
+}
+.content__gallery{
+    width: 100%;
+    height: 800px;
+    background-color: #F0FFF0;
+}
+.gallery-line{
+    width: 100%;
+    height: 150px;
+    display: -webkit-flex;
+    display: flex;
+
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.gallery-line-image{
+    background-size: cover;
+    width: 100%;
+    margin: 25px;
+    height: 100%;
+    padding: 10px;
+}
+.o1{
+    background-image: url(../images/house1.jpg);
+}
+.o2{
+    background-image: url(../images/house2.jpg);
+}
+.o3{
+    background-image: url(../images/house3.jpg);
+}
+.o4{
+    background-image: url(../images/house4.jpg);
+}
+.o5{
+    background-image: url(../images/house5.jpg);
+}
+.o6{
+    background-image: url(../images/house6.jpg);
+}
+.o7{
+    background-image: url(../images/house7.jpg);
+}
+.o8{
+   background-image: url(../images/house8.jpg);
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 350px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height:80%;
+}
+
+/* The Close Button */
+.closess {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closess:hover,
+.closess:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.popup_1 {
+    background-color: #F0F8FF;
+}
+.popup_2 {
+    background-color: #ADD8E6;
+}
+.popup_3 {
+    background-color: #DA70D6;
+}
+.popup_4 {
+    background-color: #fefefe;
+}
+.popup_5 {
+    background-color: #FFC0CB;
+}
+.popup_6 {
+    background-color: #00BFFF;
+}
+.popup_7 {
+    background-color: 	#FFD700;
+}
+.popup_8 {
+    background-color: 	#E6E6FA;
+}
+.popup-carousel {
+width:100%;
+display:flex;
+justify-content:center;
+background-color: #FFDAB9;
+}
+.popup-carousel-hider {
+    width: 200px;
+    overflow: hidden;
+}
+.popup-carousel-list1{
+    list-style: none;
+    padding: 15px;
+    display:flex;
+ }
+ .popup-carousel-list2{
+     list-style: none;
+     padding: 15px;
+     display:flex;
+  }
+.popup-carousel-list3{
+ list-style: none;
+ padding: 15px;
+display:flex;
+    }
+.popup-carousel-list4{
+  list-style: none;
+ padding: 15px;
+ display:flex;
+      }
+.popup-carousel-list5{
+ list-style: none;
+ padding: 15px;
+display:flex;
+        }
+.popup-carousel-list6{
+list-style: none;
+padding: 15px;
+display:flex;
+          }
+ .popup-carousel-list7{
+list-style: none;
+ padding: 15px;
+ display:flex;
+          }
+ .popup-carousel-list8{
+ list-style: none;
+ padding: 15px;
+ display:flex;
+  }
+.popup-carousel-element {
+display: flex;
+ flex-wrap: wrap;
+flex: 0 0 200px;
+margin-right: 25px;
+}
+.popup-carousel-element img {
+    width:200px;
+    height:150px;
+}
+#popup-carousel-arrow-left img, #popup-carousel-arrow-right img{
+    display: inline-flex;
+    height:25px;
+     width: 25px;
+    }
+
+#popup-carousel-arrow-left:hover, #popup-carousel-arrow-right:hover {
+    cursor: pointer;
+
+}
+#popup-carousel-arrow-left1 img, #popup-carousel-arrow-right1 img{
+    display: inline-flex;
+    height:25px;
+     width: 25px;
+
+    }
+
+#popup-carousel-arrow-left1:hover, #popup-carousel-arrow-right1:hover {
+    cursor: pointer;
+}
+#popup-carousel-arrow-left2 img, #popup-carousel-arrow-right2 img{
+    display: inline-flex;
+    height:25px;
+    padding: 5px;
+     width: 25px;
+    }
+
+#popup-carousel-arrow-left2:hover, #popup-carousel-arrow-right2:hover {
+    cursor: pointer;
+}
+
+
+#popup-carousel-arrow-left3 img, #popup-carousel-arrow-right3 img{
+    display: inline-flex;
+    height:25px;
+    padding: 5px;
+     width: 25px;
+        }
+
+#popup-carousel-arrow-left3:hover, #popup-carousel-arrow-right3:hover {
+    cursor: pointer;
+
+}
+#popup-carousel-arrow-left4 img, #popup-carousel-arrow-right4 img{
+    display: inline-flex;
+    height:25px;
+    padding: 5px;
+     width: 25px;
+        }
+        #popup-carousel-arrow-left4:hover, #popup-carousel-arrow-right4:hover {
+            cursor: pointer;
+
+        }
+
+      #popup-carousel-arrow-left5 img, #popup-carousel-arrow-right5 img{
+          display: inline-flex;
+          height:25px;
+           width: 25px;
+          }
+
+      #popup-carousel-arrow-left5:hover, #popup-carousel-arrow-right5:hover {
+          cursor: pointer;
+
+      }
+      #popup-carousel-arrow-left6 img, #popup-carousel-arrow-right6 img{
+          display: inline-flex;
+          height:25px;
+           width: 25px;
+          }
+
+      #popup-carousel-arrow-left6:hover, #popup-carousel-arrow-right6:hover {
+          cursor: pointer;
+
+      }
+
+
+  #popup-carousel-arrow-left7 img, #popup-carousel-arrow-right7 img{
+          display: inline-flex;
+          height:25px;
+           width: 25px;
+          }
+
+      #popup-carousel-arrow-left7:hover, #popup-carousel-arrow-right7:hover {
+          cursor: pointer;
+
+      }
+.o1:hover {
+  background-image: linear-gradient(to top, black 0%, transparent 100%),url(../images/house1.jpg);;
+  background-size: cover;
+  background-position: center;
+  cursor:pointer;
+}
+.o2:hover {
+  background-image: linear-gradient(to top, black 0%, transparent 100%),url(../images/house2.jpg);;
+  background-size: cover;
+  background-position: center;
+  cursor:pointer;
+}
+.o3:hover {
+  background-image: linear-gradient(to top, black 0%, transparent 100%),url(../images/house3.jpg);;
+  background-size: cover;
+  background-position: center;
+  cursor:pointer;
+}
+.o4:hover {
+  background-image: linear-gradient(to top, black 0%, transparent 100%),url(../images/house4.jpg);;
+  background-size: cover;
+  background-position: center;
+  cursor:pointer;
+}
+.o5:hover {
+  background-image: linear-gradient(to top, black 0%, transparent 100%),url(../images/house5.jpg);;
+  background-size: cover;
+  background-position: center;
+  cursor:pointer;
+}
+.o6:hover {
+  background-image: linear-gradient(to top, black 0%, transparent 100%),url(../images/house6.jpg);;
+  background-size: cover;
+  background-position: center;
+  cursor:pointer;
+}
+.o7:hover {
+  background-image: linear-gradient(to top, black 0%, transparent 100%),url(../images/house7.jpg);;
+  background-size: cover;
+  background-position: center;
+  cursor:pointer;
+}
+.o8:hover {
+  background-image: linear-gradient(to top, black 0%, transparent 100%),url(../images/house8.jpg);;
+  background-size: cover;
+  background-position: center;
+  cursor:pointer;
 }
