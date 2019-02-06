@@ -13,13 +13,14 @@ margin:0;
     padding:0;
     position: fixed;
     display:flex;
+    justify-content:space-between;
 }
 .menu{
-display:inline-block;
+display:contents;
     margin: 0;
     padding: 0;
     font-size: 35px;
-     text-align: center;
+
 }
  .menu-element {
     display: inline-block;
@@ -204,7 +205,7 @@ width:100%;
     margin: 0;
     text-align: center;
     font-size: 25px;
-    width: 100%;
+    width: 1200px;
 }
  .footer_content {
     display: inline-block;
@@ -229,29 +230,26 @@ width:100%;
     background-size: cover;
     margin: 0px;
     padding: 5px;
-    text-align: right;
     color: #7FFFD4;
     font-size: 21px;
+    display:flex;
+    justify-content:space-between;
 }
 .content__gallery{
     width: 100%;
-    height: 800px;
     background-color: #F0FFF0;
 }
-.gallery-line{
+.gallery-line {
     width: 100%;
-    height: 150px;
-    display: -webkit-flex;
     display: flex;
-
-    padding-bottom: 100px;
-    padding-top: 100px;
+    flex-wrap:wrap;
+        justify-content:space-between;
 }
 .gallery-line-image{
     background-size: cover;
-    width: 100%;
+    width: 230px;
     margin: 25px;
-    height: 100%;
+    height: 240px;
     padding: 10px;
 }
 .o1{
@@ -278,7 +276,7 @@ width:100%;
 .o8{
    background-image: url(../images/house8.jpg);
 }
-.modal {
+.modal{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 99999; /* Sit on top */
@@ -286,7 +284,7 @@ width:100%;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 350px; /* Full height */
+    height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -296,8 +294,8 @@ width:100%;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
-    height:80%;
+    width: 420px;
+    height:320px;
 }
 
 /* The Close Button */
@@ -390,14 +388,18 @@ list-style: none;
   }
 .popup-carousel-element {
 display: flex;
- flex-wrap: wrap;
+flex-wrap: wrap;
 flex: 0 0 200px;
 margin-right: 25px;
+/*width:200px;*/
+height:155px;
+background-size: cover;
+
 }
-.popup-carousel-element img {
+/*.popup-carousel-element img {
     width:200px;
     height:150px;
-}
+}*/
 #popup-carousel-arrow-left img, #popup-carousel-arrow-right img{
     display: inline-flex;
     height:25px;
@@ -531,4 +533,77 @@ margin-right: 25px;
   background-size: cover;
   background-position: center;
   cursor:pointer;
+}
+.image-cat{
+background-image: url(../images/cat.jpg);
+}
+.image-cat1{
+background-image: url(../images/cat2.jpg);
+}
+.image-cat2{
+background-image: url(../images/cat3.jpg);
+}
+.image-apple1{
+background-image: url(../images/apple1.jpg);
+}
+.image-apple2{
+background-image: url(../images/apple2.jpg);
+
+}
+.image-apple3{
+background-image: url(../images/apple3.jpg);
+}
+.image-h2{
+background-image: url(../images/h2.jpg);
+}
+.image-h3{
+background-image: url(../images/h3.jpg);
+}
+.image-h5{
+background-image: url(../images/h5.jpg);
+}
+.image-h6{
+background-image: url(../images/h6.jpg);
+}
+.image-h7{
+background-image: url(../images/h7.jpg);
+}
+.image-h8{
+background-image: url(../images/h8.jpg);
+}
+.image-h9{
+background-image: url(../images/h9.jpg);
+}
+.image-h10{
+background-image: url(../images/h10.jpg);
+}
+.image-h11{
+background-image: url(../images/h11.jpg);
+}
+.image-h12{
+background-image: url(../images/h12.jpg);
+}
+.image-h13{
+background-image: url(../images/house1int.jpg);
+}
+.image-h14{
+background-image: url(../images/house1int1.jpg);
+}
+.image-dog1{
+background-image: url(../images/dog1.jpg);
+}
+.image-dog2{
+background-image: url(../images/dog2.jpg);
+}
+.image-dog3{
+background-image: url(../images/dog3.jpg);
+}
+.image-bird1{
+background-image: url(../images/bird1.jpg);
+}
+.image-bird2{
+background-image: url(../images/bird2.jpg);
+}
+.image-bird3{
+background-image: url(../images/bird3.jpg);
 }

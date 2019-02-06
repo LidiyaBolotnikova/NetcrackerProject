@@ -61,18 +61,27 @@ var elementsList1 = $(".popup-carousel-list1");
 			currentLeftValue1 += listWidth1;
 			elementsList1.animate({ marginLeft : currentLeftValue1 + "px"}, 500);
 		}
-	});
+		else {
+                if (currentLeftValue1 = 0){
+                currentLeftValue1 -= listWidth1;
+                elementsList1.animate({ marginRight : currentLeftValue1 + "px"}, 500);
+				}
+		}
+		}
 
+	);
     right.click(function(){
 		if (Math.abs(currentLeftValue1) <= listWidth1) {
 			currentLeftValue1 -= listWidth1;
 			elementsList1.animate({ marginLeft : currentLeftValue1 + "px"}, 500);
 		}
+		else  {
+        		if (Math.abs(currentLeftValue1)>listWidth1){
+        		currentLeftValue1=0;
+        		elementsList1.animate({ marginLeft : currentLeftValue1 + "px"}, 500);
+        			}
+	}
 	});
-
-
-
-
 
 
 var left1=$(document.getElementById("popup-carousel-arrow-left1"));
@@ -99,12 +108,13 @@ var elementsList2 = $(".popup-carousel-list2");
 			currentLeftValue2 -= listWidth2;
 			elementsList2.animate({ marginLeft : currentLeftValue2 + "px"}, 500);
 		}
+		else  {
+                		if (Math.abs(currentLeftValue2)>listWidth2){
+                		currentLeftValue2=0;
+                		elementsList2.animate({ marginLeft : currentLeftValue2 + "px"}, 500);
+                			}
+        	}
 	});
-
-
-
-
-
 
 var left2=$(document.getElementById("popup-carousel-arrow-left2"));
  var right2 = $(document.getElementById("popup-carousel-arrow-right2"));
@@ -130,9 +140,13 @@ var elementsList3 = $(".popup-carousel-list3");
 			currentLeftValue3 -= listWidth3;
 			elementsList3.animate({ marginLeft : currentLeftValue3 + "px"}, 500);
 		}
+		else  {
+                		if (Math.abs(currentLeftValue3)>listWidth3){
+                		currentLeftValue3=0;
+                		elementsList3.animate({ marginLeft : currentLeftValue3 + "px"}, 500);
+                			}
+        	}
 	});
-
-
 
 var left3=$(document.getElementById("popup-carousel-arrow-left3"));
  var right3 = $(document.getElementById("popup-carousel-arrow-right3"));
@@ -144,8 +158,6 @@ var elementsList4 = $(".popup-carousel-list4");
         elementsCount4 = elementsList4.find("li").length,
         listWidth4=(elementsCount4-2) * elemWidth4,
         maximumOffset4 = 0;
-
-
 	left3.click(function() {
 		if (currentLeftValue4 != maximumOffset4) {
 			currentLeftValue4 += listWidth4;
@@ -158,6 +170,12 @@ var elementsList4 = $(".popup-carousel-list4");
 			currentLeftValue4 -= listWidth4;
 			elementsList4.animate({ marginLeft : currentLeftValue4 + "px"}, 500);
 		}
+		else  {
+                		if (Math.abs(currentLeftValue4)>listWidth4){
+                		currentLeftValue4=0;
+                		elementsList4.animate({ marginLeft : currentLeftValue4 + "px"}, 500);
+                			}
+        	}
 	});
 
 
@@ -185,9 +203,13 @@ var elementsList5 = $(".popup-carousel-list5");
 			currentLeftValue5 -= listWidth5;
 			elementsList5.animate({ marginLeft : currentLeftValue5 + "px"}, 500);
 		}
+		else  {
+                		if (Math.abs(currentLeftValue5)>listWidth5){
+                		currentLeftValue5=0;
+                		elementsList5.animate({ marginLeft : currentLeftValue5 + "px"}, 500);
+                			}
+        	}
 	});
-
-
 
 
 var left5=$(document.getElementById("popup-carousel-arrow-left5"));
@@ -214,8 +236,13 @@ var elementsList6 = $(".popup-carousel-list6");
 			currentLeftValue6 -= listWidth6;
 			elementsList6.animate({ marginLeft : currentLeftValue6 + "px"}, 500);
 		}
+		else  {
+                		if (Math.abs(currentLeftValue6)>listWidth6){
+                		currentLeftValue6=0;
+                		elementsList6.animate({ marginLeft : currentLeftValue6 + "px"}, 500);
+                			}
+        	}
 	});
-
 var left6=$(document.getElementById("popup-carousel-arrow-left6"));
  var right6 = $(document.getElementById("popup-carousel-arrow-right6"));
 var elementsList7 = $(".popup-carousel-list7");
@@ -226,7 +253,6 @@ var elementsList7 = $(".popup-carousel-list7");
         elementsCount7 = elementsList7.find("li").length,
         listWidth7=(elementsCount7-2) * elemWidth7,
         maximumOffset7 = 0;
-
 
 	left6.click(function() {
 		if (currentLeftValue7 != maximumOffset7) {
@@ -240,6 +266,12 @@ var elementsList7 = $(".popup-carousel-list7");
 			currentLeftValue7 -= listWidth7;
 			elementsList7.animate({ marginLeft : currentLeftValue7 + "px"}, 500);
 		}
+		else  {
+                		if (Math.abs(currentLeftValue7)>listWidth7){
+                		currentLeftValue7=0;
+                		elementsList7.animate({ marginLeft : currentLeftValue7 + "px"}, 500);
+                			}
+        	}
 	});
 
 
@@ -267,25 +299,46 @@ var elementsList8 = $(".popup-carousel-list8");
 			currentLeftValue8 -= listWidth8;
 			elementsList8.animate({ marginLeft : currentLeftValue8 + "px"}, 500);
 		}
+		else  {
+                		if (Math.abs(currentLeftValue8)>listWidth8){
+                		currentLeftValue8=0;
+                		elementsList8.animate({ marginLeft : currentLeftValue8 + "px"}, 500);
+                			}
+        	}
 	});
 
+function OffScroll () {
+var winScrollTop = $(window).scrollTop();
+$(window).bind('scroll',function () {
+  $(window).scrollTop(winScrollTop);
+});}
 
-/*var parent_popup_click11=$(document.getElementById("parent_popup_click1"));
- parent_popup_click11.style.display='block';
- parent_popup_click11.click(function(){
- if(parent_popup_click1.style.display ='block';)
- { parent_popup_click1.style.display='none';}
-
- });*/
-
-/*var el=$(document.getElementById("parent_popup_click1"));
-el.onclick=function(){
-el.style.display = (el.style.display == 'none') ? '' : 'none'
-
+$('.gallery-line-image').click(openModal);
+function openModal(element){
+var image = $(element.target);
+//var imagesList =$('.gallery-line').find(".gallery-line-image");
+//var popupsList = $('.popups-list').find(".modal");
+/*for(i=0;i<imagesList.length;i++)
+{
+  if (imagesList[i] == image[0])
+  {
+     popupsList[i].style.display='block';
+     return;
+  }
 }
-/*$('.closess').click(function(){
-el.style.display='none';
-}
-)*/
+}*/
+image.find(".modal")[0].style.display='block';
+OffScroll ();
+};
+
+$('.closess').click(function()
+{
+    $(this).parent().parent().hide();
+    $(window).unbind('scroll');
+  });
+
+
+
+
 
 });
