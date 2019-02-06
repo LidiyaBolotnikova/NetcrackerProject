@@ -337,8 +337,4 @@ $('.closess').click(function()
     $(window).unbind('scroll');
   });
 
-
-
-
-
 });
